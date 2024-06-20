@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #eaeaea;
+            color: #333;
+            border: 20px solid #ff69b4; /* This line adds a pink border */
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 3px;
+            box-sizing: border-box;
+        }
+
+        .product {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            height: 555px; /* Fixed height for each product */
+        }
+
+        .product-title {
+            font-size: 1.5em;
+            color: #007bff;
+            margin-block-end: 0px;
+            margin-block-start: 0px;
+        }
+
+        .product-introduction {
+            font-size: 1.1em;
+            text-align: left;
+            margin-bottom: 15px;
+            height: 240px; /* Fixed height for the introduction text */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Number of lines after which text is truncated */
+            -webkit-box-orient: vertical;
+            width: 100%;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            min-width: 280px;
+            max-height: 250px;
+        }
+
+        /* Style for the special ad */
+        .special-ad {
+            background: #f7f7f7; /* Light background for contrast */
+            border: 2px solid #007bff; /* Blue border */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .special-ad h2 {
+            color: #d9534f; /* Red color for title */
+            margin-bottom: 15px;
+        }
+
+        .special-ad img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <!-- Deals will be inserted here -->
+        <!-- Special advertisement -->
+        <div class="special-ad">
+            <h2>每日OzBargain折扣分享</h2>
+            <p>OzBargain是澳洲本土最大的折扣社区。我们收集最新的折扣消息，翻译中文并分享
+                <br /><small>
+                    仅转发，消息真实性请自行判断
+                </small>
+            </p>
+            <img src="a_wechat.jpg" alt="WeChat QR Code" />
+        </div>
+    </div>
+</body>
+</html>

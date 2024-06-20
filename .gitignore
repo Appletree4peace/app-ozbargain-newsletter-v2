@@ -1,0 +1,9 @@
+.DS_Store
+.env
+gcp-svc-acc-key-gmail.json
+gcp-svc-acc-key-gemini.json
+publish/*.html
+publish/*.txt
+publish/index*
+__pycache__
+*Zone.Identifier
